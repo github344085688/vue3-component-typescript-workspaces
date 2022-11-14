@@ -7,6 +7,7 @@ import BaseVue from '../../utils/base-vue';
 })
 export default class RouterViews extends BaseVue {
     public isShowShadows: boolean =true;
+    public routerViewHeight: number =400;
     public mounted(){
         console.log(this.getRouter());
     }

@@ -16,6 +16,7 @@ export default class SignInPage extends BaseVue {
     public showPageName!:string;
     public isLoding:boolean = false;
     public isShowGroup:boolean = false;
+    public sigInBoxHeight:number = 650;
     public formData: object = {
         firstName: "",
         passWord: ""
@@ -94,6 +95,7 @@ export default class SignInPage extends BaseVue {
     // 生命周期
     mounted(){
           this.isShowGroup = true;
+
     }
     beforeUnmount(){
         this.isShowGroup = false;
@@ -157,6 +159,10 @@ export default class SignInPage extends BaseVue {
         if (host === "localhost" || host === "shipdev.unisco.com" || host === "shipstage.unisco.com") {
             this.locationHrefSpId(0, 'https://stagesso.unisco.com/samlsso?spEntityID=', name);
         }
+    }
+
+    public getBoxHeight() {
+        this.$emit('update:modelValue', this.sigInBoxHeight);
     }
 
 }

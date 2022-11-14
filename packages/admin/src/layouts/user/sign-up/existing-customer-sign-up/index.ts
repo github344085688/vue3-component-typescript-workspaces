@@ -17,7 +17,7 @@ import { forEach } from 'lodash-es';
 })
 export default class ExistingCustomerSignUp extends BaseVue {
     public roleRelated: any = {};
-
+    public sigInBoxHeight:number = 700;
 
 
     public showPageName!:string;
@@ -167,6 +167,10 @@ export default class ExistingCustomerSignUp extends BaseVue {
         if (host === "localhost" || host === "shipdev.unisco.com" || host === "shipstage.unisco.com") {
             this.locationHrefSpId(0, 'https://stagesso.unisco.com/samlsso?spEntityID=', name);
         }
+    }
+
+    public getBoxHeight() {
+        this.$emit('update:modelValue', this.sigInBoxHeight);
     }
 
 }

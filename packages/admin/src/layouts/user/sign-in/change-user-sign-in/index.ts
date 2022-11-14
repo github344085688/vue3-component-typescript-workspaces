@@ -9,6 +9,7 @@ import BaseVue from '@project/share/utils/base-vue';
 
 })
 export default class ChangeUser extends BaseVue {
+    sigInBoxHeight:number = 450;
     public showPageName:string = 'login';
     public checkPageName(name:string ): void {
         this.showPageName = name;
@@ -32,11 +33,14 @@ export default class ChangeUser extends BaseVue {
     // 生命周期
     mounted(){
         const pathname = window.location.pathname.slice(1);
-        // console.log('pathname', pathname);
+        this.$emit('update:modelValue', this.sigInBoxHeight);
     }
 
     beforeUnmount(){
 
     }
 
+    public getBoxHeight() {
+        this.$emit('update:modelValue', this.sigInBoxHeight);
+    }
 }

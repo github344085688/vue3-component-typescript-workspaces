@@ -1,5 +1,5 @@
 <template>
-    <div class="sig-in-box"  >
+    <div class="sig-in-box"  :init="getBoxHeight()" >
         <div class="d-flex media-t-3 mediaju-center-to-left f-b " style="font-size: 32px; ">
             Create your Vendor account
         </div>

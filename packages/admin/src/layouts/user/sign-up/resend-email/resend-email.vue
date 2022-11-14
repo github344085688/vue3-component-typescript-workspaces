@@ -1,5 +1,5 @@
 <template>
-    <div class=" pt-0 p-4 login-moudle po-a m-auto mt-5 mb-5 pt-4 pb-4"  >
+    <div class=" pt-0 p-4 login-moudle po-a m-auto mt-5 mb-5 pt-4 pb-4"   :init="getBoxHeight()" >
         <div class="d-flex media-t-4 mediaju-center-to-left mt-5 mb-3 ">
             <img src="@/assets/img/portal/logon.svg" alt="">
         </div>

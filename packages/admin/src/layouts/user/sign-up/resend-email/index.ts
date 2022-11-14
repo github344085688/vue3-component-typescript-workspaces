@@ -9,6 +9,7 @@ import { LoginServers } from "../../../../services";
 export default class ResendEmail extends BaseVue {
 
 
+    public sigInBoxHeight:number = 700;
     public onSubmit(values:any) {
         console.log(values); 
     }
@@ -22,6 +23,9 @@ export default class ResendEmail extends BaseVue {
     }
     public verifyEmailAddress(): void {
         this.setRouter({ name: 'VerifyEmailTips'})
+    }
+    public getBoxHeight() {
+        this.$emit('update:modelValue', this.sigInBoxHeight);
     }
  
 }

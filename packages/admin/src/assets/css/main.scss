@@ -352,15 +352,19 @@
 }
 
 .login-moudle {
-	min-height: 80%;
 	width: 45%;
-	max-height: 80%;
 	height: 80%;
+	display: flex;
+	align-items: center;
+}
+.login-moudle-shadows{
+	width: 100%;
+	padding-left: 15px;
+	padding-right: 15px;
 	position: relative;
+	transition: all 0.5s;
 }
 
-.col-media {
-}
 
 .media-l-4 {
 	margin-left: 1.5rem !important;
@@ -635,8 +639,12 @@
 
 .sig-in-box {
 	position: absolute;
-	inset: 25px;
-	top: 120px;
+	padding-top: 100px;
+	left: 15px;
+	right:15px;
+	top:0;
+	bottom: 0;
+	margin: auto;
 }
 
 .parent:before, .parent:after {

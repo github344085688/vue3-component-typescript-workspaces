@@ -21,6 +21,7 @@ import { Field, Form, useField } from 'vee-validate';
 })
 export default class EnterEmail extends BaseVue {
     public showPageName!:string;
+    public sigInBoxHeight:number = 440;
     public isLoding:boolean = true;
 
     public isShowGroup: boolean = false;
@@ -72,5 +73,8 @@ export default class EnterEmail extends BaseVue {
     returnToLogin(): void {
         this.setRouter({ name: 'LoginPage'})
     }
- 
+
+    public getBoxHeight() {
+        this.$emit('update:modelValue', this.sigInBoxHeight);
+    }
 }

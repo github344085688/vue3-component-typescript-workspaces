@@ -9,6 +9,8 @@ import { LoginServers } from "../../../../services";
 export default class VerifyEmailTips extends BaseVue {
 
 
+    public sigInBoxHeight:number = 300;
+
     public onSubmit(values:any) {
         console.log(values); 
     }
@@ -22,5 +24,9 @@ export default class VerifyEmailTips extends BaseVue {
     public beforeUnmount(){
     }
 
- 
+    public getBoxHeight() {
+        this.$emit('update:modelValue', this.sigInBoxHeight);
+    }
+
+
 }

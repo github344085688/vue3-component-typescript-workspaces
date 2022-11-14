@@ -98,7 +98,6 @@ export default class DefaultSelect extends Vue {
     }
 
     public  watchModelValue(val: any, oldVal: any) {
-        console.log('watchValue',val);
         if (!val) {
             this.transitionValue = '';
         }

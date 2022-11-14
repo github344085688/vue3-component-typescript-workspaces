@@ -15,7 +15,12 @@ import { Field, Form, useField } from 'vee-validate';
 })
 export default class SendResetEmail extends BaseVue {
     public isLoding:boolean = false;
+    public sigInBoxHeight:number = 380;
     public  returnToLogin():void{
         this.setRouter({ name: 'ChangeUserSignIn'})
+    }
+
+    public getBoxHeight() {
+        this.$emit('update:modelValue', this.sigInBoxHeight);
     }
 }

@@ -1,5 +1,5 @@
 <template>
-    <div class="sig-in-box" >
+    <div class="sig-in-box" :init="getBoxHeight()" >
         <div class="d-flex media-t-3 mediaju-center-to-left f-b " style="font-size: 32px; ">
             Select your Vendor account
         </div>
@@ -28,14 +28,10 @@
                         <path d="M36.9997 37.0002C41.6038 37.0002 45.333 33.271 45.333 28.6668C45.333 24.0627 41.6038 20.3335 36.9997 20.3335C32.3955 20.3335 28.6663 24.0627 28.6663 28.6668C28.6663 33.271 32.3955 37.0002 36.9997 37.0002ZM36.9997 41.1668C31.4372 41.1668 20.333 43.9585 20.333 49.5002V53.6668H53.6663V49.5002C53.6663 43.9585 42.5622 41.1668 36.9997 41.1668Z"
                               fill="#009BD9"/>
                     </svg>
-
-
                 </div>
                 <div class="d-flex f-b mt-2 justify-content-center ">Existing customer</div>
             </div>
-
         </div>
-        <div style="height: 200px;"></div>
     </div>
 
 </template>

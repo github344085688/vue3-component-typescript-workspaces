@@ -7,6 +7,7 @@ import {
     createWebHashHistory,
     RouteRecordRaw,
     Router,
+    createWebHistory
 } from 'vue-router';
 
 
@@ -25,13 +26,15 @@ const childrenRouters = ()=>{
     filterRouterTopMap(MainRouters, childRouters, ['path','name','component','redirect'] );
     return childRouters;
 }
-const mainRoutes:any=[ {
+const mainRoutes:any=[
+     {
     path: '/main',
     name: 'Main',
     component: AdminLayout,
     redirect: {name: 'Invoices'},
     children:childrenRouters()
-}];
+}
+];
 
 const routes: Array<RouteRecordRaw> = [...UserRouters,...mainRoutes];
 

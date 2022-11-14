@@ -2,6 +2,7 @@ import { Options } from 'vue-class-component';
 import template from "./change-user-sign-up.vue";
 import BaseVue from '@project/share/utils/base-vue';
 import { LoginServers } from "../../../../services";
+import { ref } from "vue";
 @Options({
     mixins: [template],
     name:'ChangeUserSignUp',
@@ -10,6 +11,7 @@ import { LoginServers } from "../../../../services";
 
 })
 export default class ChangeUserSignUp extends BaseVue {
+    sigInBoxHeight:number = 440;
     public onChangeUser(name: string):void{
         this.setRouter({ name: 'ExistingCustomerSignUp'})
        /* this.showPageName = 'loginPage';*/
@@ -20,11 +22,14 @@ export default class ChangeUserSignUp extends BaseVue {
     // 生命周期
     mounted(){
         const pathname = window.location.pathname.slice(1);
-        // console.log('pathname', pathname);
     }
 
     beforeUnmount(){
 
+    }
+
+    public getBoxHeight() {
+        this.$emit('update:modelValue', this.sigInBoxHeight);
     }
 
 }
