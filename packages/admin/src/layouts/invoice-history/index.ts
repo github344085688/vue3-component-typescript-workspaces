@@ -1,7 +1,7 @@
 import { Options } from 'vue-class-component';
 import template from "./invoice-history.vue";
 import './invoice-history.scss';
-import BaseVue from '@project/share/utils/base-vue';
+import {BaseVue} from '@project/share';
 
 @Options({
     mixins: [template],

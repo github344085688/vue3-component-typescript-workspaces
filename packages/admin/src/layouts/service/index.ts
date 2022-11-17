@@ -1,7 +1,7 @@
 import { Options } from 'vue-class-component';
 import template from "./service.vue";
 import './service.scss';
-import BaseVue from '@project/share/utils/base-vue';
+import {BaseVue} from '@project/share';
 import ChartLine from '../../components/chart-line';
 import MixedChart  from '../../components/mixed-chart';
 import { BaseDatePicker }  from '../../components';

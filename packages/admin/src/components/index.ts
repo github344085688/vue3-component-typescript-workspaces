@@ -2,25 +2,38 @@
  * Created by f on 2022/11/2.
  */
 
-import DefaultSelect from '@project/share/components/default-select';
-import DefaultSelectTriangle from "@project/share/components/default-select-triangle";
+import { DefaultSelect } from '@project/share';
+import { DefaultSelectTriangle }  from "@project/share";
 import StatusColors from "./status-colors";
 import StatusBgColors from "./status-bg-colors";
 import PrimaryModal from "./primary-modal";
 import Pager from "./pager";
 const globalComponents = [
-    DefaultSelect,
-    DefaultSelectTriangle,
-    StatusColors,
-    StatusBgColors,
-    PrimaryModal,
-    Pager
+    {
+        name:'default-select',
+        component:DefaultSelect
+    }, {
+        name:'default-select-triangle',
+        component:DefaultSelectTriangle
+    }, {
+        name:'status-colors',
+        component:StatusColors
+    }, {
+        name:'status-bg-colors',
+        component:StatusBgColors
+    }, {
+        name:'primary-modal',
+        component:PrimaryModal
+    }, {
+        name:'pager',
+        component:Pager
+    },
 ];
 
 export default {
     install (app: any) {
         globalComponents.forEach(component => {
-            app.component(component.name, component);
+            app.component(component.name, component.component);
         });
     }
 }

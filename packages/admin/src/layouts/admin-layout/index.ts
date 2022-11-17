@@ -1,11 +1,11 @@
 import { Options } from 'vue-class-component';
 import template from "./admin-layout.vue";
 import './admin-layout.scss';
-import BaseVue from '@project/share/utils/base-vue';
+import {BaseVue} from '@project/share';
 import SideNav from './side-nav';
 import TopBar from './top-bar';
 import { ref  } from "vue";
-import { useEventbus } from '@project/share/utils/useEventbus';
+import { useEventbus } from '@project/share';
 @Options({
     mixins: [template],
     name:'Layouts',

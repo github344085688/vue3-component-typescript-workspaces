@@ -1,5 +1,4 @@
 import { Vue } from 'vue-class-component';
-import Session from '../shared/session';
 import { useRouter,onBeforeRouteUpdate  } from 'vue-router'
 import { ComponentInternalInstance, getCurrentInstance } from 'vue'
 export default class BaseVue extends Vue {

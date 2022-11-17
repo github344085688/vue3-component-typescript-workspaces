@@ -1,6 +1,6 @@
 import { Options } from 'vue-class-component';
 import template from "./export.vue";
-import BaseVue from '@project/share/utils/base-vue';
+import {BaseVue} from '@project/share';
 import { ImportDrap } from '../../../components';
 @Options({
     mixins: [template],

@@ -1,6 +1,6 @@
 import { Options } from 'vue-class-component';
 import template from "./invoices.vue";
-import BaseVue from '@project/share/utils/base-vue';
+import {BaseVue} from '@project/share';
 @Options({
     mixins: [template],
     name: 'Invoices',

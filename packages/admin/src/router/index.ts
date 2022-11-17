@@ -1,5 +1,5 @@
 import AdminLayout from '../layouts/admin-layout'
-import {filterRouterTopMap} from '@project/share/utils/utils'
+import {filterRouterTopMap} from '@project/share'
 import UserRouters from './user-routers'
 import MainRouters from './main-routers'
 import {

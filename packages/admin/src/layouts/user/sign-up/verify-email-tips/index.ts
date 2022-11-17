@@ -1,7 +1,6 @@
 import { Options } from 'vue-class-component';
 import template from "./verify-email-tips.vue";
-import BaseVue from '@project/share/utils/base-vue';
-import { LoginServers } from "../../../../services";
+import { BaseVue } from '@project/share';
 @Options({
     mixins: [template],
     name:'VerifyEmailTips',

@@ -3,7 +3,7 @@ import template from "./default-select-triangle.vue";
 import { ref } from "vue";
 @Options({
     mixins: [template],
-    mame:'DefaultSelect',
+    mame:'DefaultSelectTriangle',
     props: {
         color:{
             type: String,

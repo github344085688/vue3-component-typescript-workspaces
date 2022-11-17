@@ -1,6 +1,6 @@
 import { Options } from 'vue-class-component';
 import template from "./sign-in-page.vue";
-import BaseVue from '@project/share/utils/base-vue';
+import {BaseVue} from '@project/share';
 import { LoginServers } from "../../../../services";
 import { Field, Form, useField } from 'vee-validate';
 @Options({
