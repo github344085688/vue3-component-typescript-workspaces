@@ -1,7 +1,7 @@
 import { Options } from 'vue-class-component';
 import template from "./top-bar.vue";
 import './top-bar.scss';
-import BaseVue from '@project/share/utils/base-vue';
+import {BaseVue} from '@project/share';
 @Options({
     mixins: [template],
     name:'TopBar',

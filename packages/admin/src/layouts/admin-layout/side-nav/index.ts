@@ -1,10 +1,10 @@
 import { Options } from 'vue-class-component';
 import template from "./side-nav.vue";
 import './side-nav.scss';
-import BaseVue from '@project/share/utils/base-vue';
+import {BaseVue} from '@project/share';
 import SideNavConfig from '../../../router/main-routers';
 import {find,forEach} from 'lodash-es';
-import {filterRouterTopMap} from '@project/share/utils/utils'
+import {filterRouterTopMap} from '@project/share'
 
 @Options({
     mixins: [template],

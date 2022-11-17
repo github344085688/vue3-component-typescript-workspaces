@@ -1,6 +1,6 @@
 import { Options } from 'vue-class-component';
 import template from "./change-user-sign-up.vue";
-import BaseVue from '@project/share/utils/base-vue';
+import {BaseVue} from '@project/share';
 import { LoginServers } from "../../../../services";
 import { ref } from "vue";
 @Options({

@@ -1,8 +1,7 @@
 /**
  * Created by f on 2022/9/28.
  */
-// import UserRoutersViews from '@project/share/components/user-routers-views';
-import { UserRoutersViews } from '@project/share/components';
+import { UserRoutersViews } from '@project/share';
 import ChangeUserSignIn from '../layouts/user/sign-in/change-user-sign-in';
 import EnterEmail from '../layouts/user/sign-in/enter-email';
 import Login from '../layouts/user/sign-in/sign-in-page';

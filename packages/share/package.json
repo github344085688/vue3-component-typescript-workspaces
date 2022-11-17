@@ -1,7 +1,7 @@
 {
   "name": "@project/share",
   "version": "0.1.0",
-  "main": "index.js",
+  "main": "index.ts",
   "scripts": {
     "build": "echo 没有打包",
     "lint": "vue-cli-service lint"

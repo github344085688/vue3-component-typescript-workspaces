@@ -1,6 +1,6 @@
 import { Options } from 'vue-class-component';
 import template from "./change-user-sign-in.vue";
-import BaseVue from '@project/share/utils/base-vue';
+import {BaseVue} from '@project/share';
 @Options({
     mixins: [template],
     name: 'ChangeUser',

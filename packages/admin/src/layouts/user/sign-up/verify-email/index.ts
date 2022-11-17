@@ -1,6 +1,6 @@
 import { Options } from 'vue-class-component';
 import template from "./verify-email.vue";
-import BaseVue from '@project/share/utils/base-vue';
+import {BaseVue} from '@project/share';
 import { LoginServers } from "../../../../services";
 import { Field, Form } from 'vee-validate';
 @Options({

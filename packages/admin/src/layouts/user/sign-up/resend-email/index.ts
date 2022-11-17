@@ -1,6 +1,6 @@
 import { Options } from 'vue-class-component';
 import template from "./resend-email.vue";
-import BaseVue from '@project/share/utils/base-vue';
+import {BaseVue} from '@project/share';
 import { LoginServers } from "../../../../services";
 @Options({
     mixins: [template],
