@@ -1,8 +1,8 @@
 /**
  * Created by f on 2022/9/22.
  */
-import { Directive } from 'vue';
-import { forEach } from 'lodash-es';
+import {Directive} from 'vue';
+import {forEach} from 'lodash-es';
 
 type Value = boolean;
 export const loding: Directive<HTMLElement, Value> = {
@@ -40,7 +40,8 @@ export const loding: Directive<HTMLElement, Value> = {
     },
     beforeUnmount() {
     },
-    unmounted() {},
+    unmounted() {
+    },
 };
 
 export const butloding: Directive<HTMLElement, Value> = {
@@ -66,7 +67,8 @@ export const butloding: Directive<HTMLElement, Value> = {
     },
     beforeUnmount() {
     },
-    unmounted() {},
+    unmounted() {
+    },
 };
 
 
