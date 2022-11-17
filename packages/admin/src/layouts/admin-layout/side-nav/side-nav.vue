@@ -22,7 +22,7 @@
                                 <div class="item_box" @click.stop.prevent="foldDetails(isFoldDetails,item)"
                                      :class="{'active':navName==item.name}"
                                      :init="itemChildren = setItemChildren(item.children)">
-                                    <div class="img-box"><img :src="item.icon"></div>
+                                    <div class="img-box"><img :src="require(`@/assets/img/${item.icon}`)"></div>
                                     <div class="pro-ab">
                                         <div class="text-box">
                                             <a href="#" class="unis-a">

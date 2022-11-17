@@ -25,7 +25,7 @@ const SideNavConfig: Array<SideNavList> = [
         children: [{
             title: 'Dashboard',
             name: 'Dashboard',
-            icon: require('../assets/img/tms2.svg'),
+            icon: 'tms2.svg',
             children: [],
 
         },]
@@ -36,7 +36,7 @@ const SideNavConfig: Array<SideNavList> = [
             {
                 title: 'TMS',
                 name: 'TMS',
-                icon: require('../assets/img/tms2.svg'),
+                icon: 'tms2.svg',
                 children: [{
                     parentName: 'TMS',
                     path: 'TMS/invoices',
@@ -70,7 +70,7 @@ const SideNavConfig: Array<SideNavList> = [
                 name: 'Service',
                 path: 'service',
                 component: Service,
-                icon: require('../assets/img/tms2.svg'),
+                icon: 'tms2.svg',
 
             }
         ]
@@ -80,7 +80,7 @@ const SideNavConfig: Array<SideNavList> = [
         {
             title: 'Payments ',
             name: 'Payments',
-            icon: require('../assets/img/tms2.svg'),
+            icon: 'tms2.svg',
             children: [{
                 parentName: 'Payments',
                 path: 'payments/business',
@@ -97,7 +97,7 @@ const SideNavConfig: Array<SideNavList> = [
         }, {
             title: 'Business Info  ',
             name: 'BusinessInfo',
-            icon: require('../assets/img/tms2.svg'),
+            icon: 'tms2.svg',
         },
     ]
     },
@@ -106,11 +106,11 @@ const SideNavConfig: Array<SideNavList> = [
         {
             title: 'Message Center ',
             name: 'MessageCenter',
-            icon: require('../assets/img/tms2.svg'),
+            icon: 'tms2.svg',
         }, {
             title: 'Settings',
             name: 'Settings',
-            icon: require('../assets/img/tms2.svg'),
+            icon: 'tms2.svg',
         },
     ]
     },
