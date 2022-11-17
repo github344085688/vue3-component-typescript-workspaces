@@ -79,8 +79,8 @@ html .sm-t, body .sm-t {
 
 @font-face {
   font-family: "unis";
-  src: url("fonts/unis.eot?qj971j");
-  src: url("fonts/unis.eot?qj971j#iefix") format("embedded-opentype"), url("fonts/unis.ttf?qj971j") format("truetype"), url("fonts/unis.woff?qj971j") format("woff"), url("fonts/unis.svg?qj971j#unis") format("svg");
+  src: url("../fonts/unis.eot?qj971j");
+  src: url("../fonts/unis.eot?qj971j#iefix") format("embedded-opentype"), url("../fonts/unis.ttf?qj971j") format("truetype"), url("../fonts/unis.woff?qj971j") format("woff"), url("../fonts/unis.svg?qj971j#unis") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -522,8 +522,8 @@ html .sm-t, body .sm-t {
 
 @font-face {
   font-family: "addIcon";
-  src: url("fonts/addIcon.eot?rx2uz2");
-  src: url("fonts/addIcon.eot?rx2uz2#iefix") format("embedded-opentype"), url("fonts/addIcon.ttf?rx2uz2") format("truetype"), url("fonts/addIcon.woff?rx2uz2") format("woff"), url("fonts/addIcon.svg?rx2uz2#addIcon") format("svg");
+  src: url("../fonts/addIcon.eot?rx2uz2");
+  src: url("../fonts/addIcon.eot?rx2uz2#iefix") format("embedded-opentype"), url("../fonts/addIcon.ttf?rx2uz2") format("truetype"), url("../fonts/addIcon.woff?rx2uz2") format("woff"), url("../fonts/addIcon.svg?rx2uz2#addIcon") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -11930,7 +11930,7 @@ template {
   position: relative;
   height: 1.75rem;
   width: 1.75rem;
-  background: url(fonts/toolttipl.svg) no-repeat 50% 50%;
+  background: url(../fonts/toolttipl.svg) no-repeat 50% 50%;
   background-size: 1rem 1rem;
   cursor: pointer;
 }
