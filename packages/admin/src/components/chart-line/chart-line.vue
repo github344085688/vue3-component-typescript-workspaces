@@ -6,5 +6,6 @@
                 :dataset-id-key="'datasetIdKey1'"
                 :css-classes="cssClasses"
                 :height="height"
+                :width="width"
         />
 </template>

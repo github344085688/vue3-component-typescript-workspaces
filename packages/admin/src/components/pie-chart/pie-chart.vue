@@ -1,6 +1,6 @@
 <template>
 
-    <Bar
+    <Pie
             :chart-options="chartOptions"
             :chart-data="chartData"
             :chart-id="'chartId2'"

@@ -1,0 +1,10 @@
+.tbody-br-b-no {
+	tr{
+		&:last-child{
+			>td{
+				border-bottom: none !important;
+			}
+
+		}
+	}
+}

@@ -1,39 +1,26 @@
 import { Options, Vue } from 'vue-class-component';
-import template from "./mixed-chart.vue";
+import template from "./pie-chart.vue";
 import {PropType } from 'vue'
-import { chartminxed } from '../../utils/chartOptions';
-import { Bar } from 'vue-chartjs'
+import { pieChart } from '../../utils/chartOptions';
+import { Pie } from 'vue-chartjs'
 import {
     Chart as ChartJS,
     Title,
     Tooltip,
     Legend,
-    LineElement,
-    LinearScale,
-    PointElement,
+    ArcElement,
     CategoryScale,
-    Plugin,
-    BarElement
-
+    Plugin
 } from 'chart.js'
 
-ChartJS.register(
-    Title,
-    Tooltip,
-    Legend,
-    LineElement,
-    LinearScale,
-    PointElement,
-    CategoryScale,
-    BarElement
-)
+ChartJS.register(Title, Tooltip, Legend, ArcElement, CategoryScale)
 
 
 @Options({
     mixins: [template],
     name:'Service',
     components: {
-        Bar
+        Pie
     },
     props: {
         chartId: {
@@ -69,7 +56,7 @@ ChartJS.register(
         datasets:{handler : 'watchDatasets', immediate: true ,deep: true}
     }
 })
-export default class MixedChart extends Vue {
+export default class PieChart extends Vue {
 
     public chartId!:string;
     public cssClasses!:string;
@@ -79,48 +66,20 @@ export default class MixedChart extends Vue {
     public plugins!: any;
 
     public datasets!:Array<any>;
-    public chartOptions: any = chartminxed;
+    public chartOptions: any = pieChart;
     public isSideSpread: boolean = true;
     public sideSpread: any = {};
-    public chartData: any = {
-        labels: ["","","","","","","","" ],
+    public chartData:any = {
+        labels: ['VueJs', 'EmberJs', 'ReactJs', 'AngularJs'],
         datasets: [
             {
-                type: 'line',
-                label: 'circle',
-                data: [35, 20, 35, 50, 45, 50, 65, 55 ],
-                /*data: [{
-                    x: -10,
-                    y: 0
-                }, {
-                    x: 0,
-                    y: 10
-                }, {
-                    x: 10,
-                    y: 5
-                }, {
-                    x: 0.5,
-                    y: 5.5
-                }, null, null, null, null],*/
-                borderColor: '#488492',
-                backgroundColor: '#488492',
-                /* pointStyle: 'triangle',
-                 pointRadius: 6,*/
-            },
-            {
-                type: 'bar',
-                label: 'aim',
-                data: [2, 10, 25, 30,50, 60, 65, 75],
-                borderColor: 'rgba(255, 99, 132, 0.2)',
-                backgroundColor: 'rgba(255, 99, 132, 0.2)',
-                pointStyle: 'none',
-                pointRadius: 0,
-            },
-
+                backgroundColor: ['#E5F5FD', '#EBECFF', '#FFEFCD', '#D6FCE7'],
+                data: [40, 20, 80, 10]
+            }
         ]
-    }
+    };
     public watchDatasets(value: number, oldValue: number): void {
-       this.chartData = value;
+       // this.chartData = value;
     }
 
     public mounted():void{

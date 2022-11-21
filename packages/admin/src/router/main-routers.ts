@@ -2,6 +2,7 @@
  * Created by f on 2022/9/28.
  */
 import Invoices from '../layouts/invoices'
+import Dashboard from '../layouts/dashboard'
 import InvoicesList from '../layouts/invoices/invoices-list'
 import ImportExport from '../layouts/invoices/import-export'
 import Service from '../layouts/service'
@@ -26,6 +27,8 @@ const SideNavConfig: Array<SideNavList> = [
             title: 'Dashboard',
             name: 'Dashboard',
             icon: 'tms2.svg',
+            path: '/dashboard',
+            component: Dashboard,
             children: [],
 
         },]
