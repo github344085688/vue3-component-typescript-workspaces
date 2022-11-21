@@ -1,6 +1,6 @@
 import { Options, Vue } from 'vue-class-component';
 import template from "./chart-line.vue";
-import { chartLine } from '../../utils/chartOptions';
+import { chartLine, salesChartLine, usersLine, defaultChartLine } from '../../utils/chartOptions';
 import { PropType } from 'vue'
 import { Line } from 'vue-chartjs'
 import {forEach,isArray,isPlainObject} from 'lodash-es';
@@ -32,7 +32,7 @@ ChartJS.register(
     LinearScale,
     PointElement,
     CategoryScale
-)
+);
 
 @Options({
     mixins: [template],
@@ -44,6 +44,10 @@ ChartJS.register(
         chartId: {
             type: String,
             default: 'bar'
+        },
+        width: {
+            type: Number,
+            width: 400
         },
         height: {
             type: Number,
@@ -65,6 +69,10 @@ ChartJS.register(
             type: Array,
             default: () => [],
         },
+        optionsName: {
+            type: String,
+            default: 'chartLine',
+        },
         cartOptions: {
             type: [Object,Array, String],
             default: '',
@@ -78,6 +86,7 @@ ChartJS.register(
 export default class ChartLine extends Vue {
     public chartId!:string;
     public cssClasses!:string;
+    public optionsName!:string;
     public cartOptions!:object | Array<any> | string;
     public width!: number;
     public height!: number;
@@ -149,6 +158,23 @@ export default class ChartLine extends Vue {
     public mounted():void{
         this.fillCartData(this.datasets, true);
         this.chartData.labels =  this.chartLabels;
+        switch(this.optionsName) {
+            case 'chartLine':
+                this.chartOptions = chartLine;
+                break;
+            case 'salesChartLine':
+                this.chartOptions = salesChartLine;
+                break;
+            case 'usersLine':
+                this.chartOptions = usersLine;
+                break;
+            case 'defaultChartLine':
+                this.chartOptions = defaultChartLine;
+                break;
+            default:
+                this.chartOptions = chartLine;
+        }
+
     }
 
 }

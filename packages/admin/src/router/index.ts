@@ -31,7 +31,7 @@ const mainRoutes:any=[
     path: '/main',
     name: 'Main',
     component: AdminLayout,
-    redirect: {name: 'Invoices'},
+    redirect: {name: 'Dashboard'},
     children:childrenRouters()
 }
 ];

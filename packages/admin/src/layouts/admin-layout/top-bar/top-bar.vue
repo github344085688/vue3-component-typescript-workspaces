@@ -1,5 +1,5 @@
 <template>
-    <div class="unis-topBar">
+    <div class="unis-topBar" style="box-shadow:none;border-bottom: 1px solid #cbd0dd; ">
         <div class="search-box br-defaultHover"
              :class="{'search-box-in':isInSearchBox}">
             <input type="text"
