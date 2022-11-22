@@ -279,7 +279,7 @@
                         <th class="pl-2 pr-2 br-t-n br-r-c">Acc.</th>
                         <th class="pl-2 pr-2 br-t-n br-r-c">FSC</th>
                         <th class="pl-2 pr-2 br-t-n br-r-c">Discount</th>
-                        <th class="pl-2 pr-2 br-t-n">Total</th>
+                        <th class="pl-2 pr-2 br-r-c">Total</th>
                     </tr>
                     </thead>
                     <tbody class="tbody-br-b-no">
