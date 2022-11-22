@@ -275,7 +275,7 @@
                         <th rowspan="2" class="pl-2 pr-2">Dispute</th>
                     </tr>
                     <tr>
-                        <th class="pl-2 pr-2 br-t-n" style="border-left: none;">Base</th>
+                        <th class="pl-2 pr-2 br-t-n br-r-c"  >Base</th>
                         <th class="pl-2 pr-2 br-t-n br-r-c">Acc.</th>
                         <th class="pl-2 pr-2 br-t-n br-r-c">FSC</th>
                         <th class="pl-2 pr-2 br-t-n br-r-c">Discount</th>
