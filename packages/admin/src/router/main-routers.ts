@@ -26,7 +26,7 @@ const SideNavConfig: Array<SideNavList> = [
         children: [{
             title: 'Dashboard',
             name: 'Dashboard',
-            icon: 'tms2.svg',
+            icon: 'dashboard.svg',
             path: '/dashboard',
             component: Dashboard,
             children: [],
@@ -39,7 +39,7 @@ const SideNavConfig: Array<SideNavList> = [
             {
                 title: 'TMS',
                 name: 'TMS',
-                icon: 'tms2.svg',
+                icon: 'tms.svg',
                 children: [{
                     parentName: 'TMS',
                     path: 'TMS/invoices',
@@ -73,7 +73,15 @@ const SideNavConfig: Array<SideNavList> = [
                 name: 'Service',
                 path: 'service',
                 component: Service,
-                icon: 'tms2.svg',
+                icon: 'service.svg',
+
+            },
+            {
+                title: 'Brokerage',
+                name: 'Brokerage',
+                path: 'Brokerage',
+                component: Service,
+                icon: 'brokerage.svg',
 
             }
         ]
@@ -83,7 +91,7 @@ const SideNavConfig: Array<SideNavList> = [
         {
             title: 'Payments ',
             name: 'Payments',
-            icon: 'tms2.svg',
+            icon: 'payments.svg',
             children: [{
                 parentName: 'Payments',
                 path: 'payments/business',
@@ -100,7 +108,7 @@ const SideNavConfig: Array<SideNavList> = [
         }, {
             title: 'Business Info  ',
             name: 'BusinessInfo',
-            icon: 'tms2.svg',
+            icon: 'your-business.svg',
         },
     ]
     },
@@ -109,11 +117,11 @@ const SideNavConfig: Array<SideNavList> = [
         {
             title: 'Message Center ',
             name: 'MessageCenter',
-            icon: 'tms2.svg',
+            icon: 'message-center.svg',
         }, {
             title: 'Settings',
             name: 'Settings',
-            icon: 'tms2.svg',
+            icon: 'settings.svg',
         },
     ]
     },

@@ -12,7 +12,8 @@
     "moment": "^2.29.4",
     "vee-validate": "^4.7.2",
     "vue-chartjs": "^4.1.2",
-    "vue-datepicker-next": "^1.0.2"
+    "vue-datepicker-next": "^1.0.2",
+    "vue-grid-layout": "^2.4.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-typescript": "^5.0.8",
