@@ -23,6 +23,7 @@ export default class Dashboard extends BaseVue {
     public cartData: Array<any> = [
         [2, 10, 25, 30]
     ];
+    public isFullScreen:boolean = false;
     public cartOptions: Array<any> = [
         {
             type: 'line',
@@ -136,6 +137,29 @@ export default class Dashboard extends BaseVue {
             .catch((err: any) => {
                 console.log(err);
             });
+    }
+
+    public onFullScreen() {
+        if (this.isFullScreen) {
+            let de: any = document;
+            if (de.exitFullscreen) {
+                de.exitFullscreen();
+            } else if (de.mozCancelFullScreen) {
+                de.mozCancelFullScreen();
+            } else if (de.webkitExitFullscreen) {
+                de.webkitExitFullscreen();
+            }
+        } else {
+            let de: any = document.documentElement;
+            if (de.requestFullscreen) {
+                de.requestFullscreen();
+            } else if (de.mozRequestFullScreen) {
+                de.mozRequestFullScreen();
+            } else if (de.webkitRequestFullScreen) {
+                de.webkitRequestFullScreen();
+            }
+        }
+        this.isFullScreen = !this.isFullScreen;
     }
 
 

@@ -1,16 +1,17 @@
 <template>
     <div class="d-flex flex-column  bg-secblue100" style="padding:25px 50px">
         <div class="d-flex flex-nowrap justify-content-between mb-4">
-            <div class="d-flex ft-grey700 f-24">
-                <i class="icon-51 mr-4"></i>
-                <i class="icon-23 mr-4"></i>
-                <i class="icon-46 mr-4"></i>
+            <div class="d-flex ft-grey700 f-24 align-items-center">
+                    <img src="@/assets/img/full-screen.svg" class="m-0 mr-4 p-0 cursor-p" style="margin-top: -2px; line-height: 0px" alt="" @click.stop.prevent= onFullScreen() >
+                <i class="icon-51 mr-4 mt-2"></i>
+                <i class="icon-23 mr-4 mt-2"></i>
+                <i class="icon-46 mr-4 mt-2"></i>
             </div>
 
-            <div class="ft-grey700 f-18">
-                <i class="icon-68 mr-4"></i>
-                <i class="icon-21 mr-4"></i>
-            </div>
+        <!--    <div class="ft-grey700 f-18">
+                <i class="icon-68 mr-4 mt-2"></i>
+                <i class="icon-21 mr-4 mt-2"></i>
+            </div>-->
 
         </div>
         <div class="d-flex align-items-center">
